@@ -1,12 +1,12 @@
-title: Nuxt UI Pro - SaaS template
-description: Nuxt UI Pro is a collection of premium Vue components built on top of Nuxt UI to create beautiful & responsive Nuxt applications in minutes.
+title: Tư Vấn BHXH Tự Nguyện | Chị Hồ Thị Thắm - Bưu điện VHX Tự Lập
+description: Bạn muốn có một cuộc sống an nhàn sau khi nghỉ hưu? Hãy để chị Hồ Thị Thắm giúp bạn xây dựng kế hoạch tài chính với BHXH tự nguyện. Liên hệ ngay để được tư vấn chi tiết!
 navigation: false
 hero:
-  title: Build your SaaS in seconds
-  description: This template demonstrates most of Nuxt UI Pro's components. It's a great starting point to build your own SaaS.
+  title: Đóng tiếp BHXH Tự Nguyện để hưởng lương hưu
+  description: Thời gian không chờ đợi ai! Bạn đã sẵn sàng cho một cuộc sống an nhàn sau khi nghỉ hưu chưa? Đừng để tương lai bất ổn làm bạn lo lắng.
   headline:
-    label: Made with Nuxt UI Pro
-    to: https://ui.nuxt.com/pro
+    label: Nhóm Zalo tư vấn
+    to: https://zalo.me/g/rtepcn733
     icon: i-heroicons-arrow-top-right-on-square-20-solid
   links:
     - label: Đăng ký
@@ -15,11 +15,11 @@ hero:
       color: black
       icon: i-heroicons-arrow-right-20-solid
       trailing: true
-    - label: Use this template
-      icon: i-simple-icons-github
+    - label: Những điều cần biết
+      icon: i-heroicons-book-open
       size: xl
       color: gray
-      to: https://github.com/nuxt-ui-pro/saas
+      to: /can-biet
       target: _blank
 sections:
   - title: The power of our service

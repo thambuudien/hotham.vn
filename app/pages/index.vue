@@ -53,7 +53,7 @@ useSeoMeta({
     </ULandingHero>
 
     <ULandingSection class="!pt-0">
-      <ImagePlaceholder />
+      <img alt="Đóng tiếp BHXH tự nguyện để hưởng lương hưu" src="https://i0.wp.com/store.hotham.vn/wordpress/wp-content/uploads/sites/30/2024/07/Dong-tiep-BHXH-tu-nguyen-de-co-luong-huu.png">
     </ULandingSection>
 
     <ULandingSection
