@@ -9,8 +9,8 @@ hero:
     to: https://ui.nuxt.com/pro
     icon: i-heroicons-arrow-top-right-on-square-20-solid
   links:
-    - label: Get started
-      to: '/signup'
+    - label: Đăng ký
+      to: '/dang-ky'
       size: xl
       color: black
       icon: i-heroicons-arrow-right-20-solid
@@ -138,7 +138,7 @@ cta:
   title: Get started today
   description: Nisi mollit id aliquip sunt est laborum sit sit.
   links:
-    - label: Buy now
+    - label: Mức đóng
       size: xl
       color: black
-      to: /pricing
+      to: /muc-dong
