@@ -18,14 +18,18 @@ const links = [{
 <template>
   <UHeader :links="links">
     <template #logo>
-      Hồ Thị Thắm <UBadge
+      <img
+        src="/tham-buu-dien.webp"
+        alt="Hồ Thị Thắm"
+        class="shadow-xl rounded-full mr-1"
+      > Hồ Thị Thắm <UBadge
         label="Bưu điện"
         variant="subtle"
         class="mb-0.5"
       />
     </template>
 
-    <template #right>
+    <!-- <template #right>
       <UButton
         label="Đăng nhập"
         color="gray"
@@ -39,7 +43,7 @@ const links = [{
         to="/dang-ky"
         class="hidden lg:flex"
       />
-    </template>
+    </template> -->
 
     <template #panel>
       <UNavigationTree
