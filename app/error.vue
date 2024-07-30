@@ -3,8 +3,8 @@ import type { ParsedContent } from '@nuxt/content'
 import type { NuxtError } from '#app'
 
 useSeoMeta({
-  title: 'Page not found',
-  description: 'We are sorry but this page could not be found.'
+  title: 'Trang không tồn tại',
+  description: 'Chúng tôi xin lỗi, nhưng trang này không thể được tìm thấy.'
 })
 
 defineProps({
@@ -16,7 +16,7 @@ defineProps({
 
 useHead({
   htmlAttrs: {
-    lang: 'en'
+    lang: 'vi'
   }
 })
 

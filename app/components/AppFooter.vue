@@ -100,10 +100,10 @@ function onSubmit() {
       <UColorModeButton size="sm" />
 
       <UButton
-        to="https://github.com/nuxt-ui-pro/saas"
+        to="https://www.facebook.com/ThamBuuDien"
         target="_blank"
-        icon="i-simple-icons-github"
-        aria-label="GitHub"
+        icon="i-simple-icons-facebook"
+        aria-label="Facebook"
         color="gray"
         variant="ghost"
       />

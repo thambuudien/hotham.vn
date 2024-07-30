@@ -57,9 +57,9 @@ function onSubmit(data: any) {
     >
       <template #description>
         Don't have an account? <NuxtLink
-          to="/signup"
+          to="/dang-ky"
           class="text-primary font-medium"
-        >Sign up</NuxtLink>.
+        >Đăng ký</NuxtLink>.
       </template>
 
       <template #password-hint>

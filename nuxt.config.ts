@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
     '@nuxt/eslint',
-    '@nuxt/fonts',
+    '@nuxtjs/google-fonts',
     '@nuxt/image',
     '@nuxt/ui',
     '@nuxthq/studio',
@@ -34,7 +34,7 @@ export default defineNuxtConfig({
     // Temporary workaround for prerender regression. see https://github.com/nuxt/nuxt/issues/27490
     '/': { prerender: true },
     '/api/search.json': { prerender: true },
-    '/docs': { redirect: '/docs/getting-started', prerender: false }
+    '/can-biet': { redirect: '/can-biet/getting-started', prerender: false }
   },
 
   devtools: {

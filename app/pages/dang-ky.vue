@@ -61,9 +61,9 @@ function onSubmit(data: any) {
     >
       <template #description>
         Already have an account? <NuxtLink
-          to="/login"
+          to="/dang-nhap"
           class="text-primary font-medium"
-        >Login</NuxtLink>.
+        >Đăng nhập</NuxtLink>.
       </template>
 
       <template #footer>
