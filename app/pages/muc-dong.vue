@@ -55,9 +55,7 @@ const luongHuuDuTinh = computed(() => {
         </UPricingToggle>
       </template>
     </UPageHero>
-    <UContainer>
 
-    </UContainer>
 
     <UContainer>
       <UPricingCard v-for="(plan, index) in phuongThucDongs" :key="index" class="mt-5" v-bind="plan" :price="plan.price"
