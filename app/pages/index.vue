@@ -15,48 +15,30 @@ useSeoMeta({
 
 <template>
   <div v-if="page">
-    <ULandingHero
-      :title="page.hero.title"
-      :description="page.hero.description"
-      :links="page.hero.links"
-    >
-      <div class="absolute inset-0 landing-grid z-[-1] [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" />
+    <ULandingHero :title="page.hero.title" :description="page.hero.description" :links="page.hero.links">
+      <div
+        class="absolute inset-0 landing-grid z-[-1] [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" />
 
       <template #headline>
-        <UBadge
-          v-if="page.hero.headline"
-          variant="subtle"
-          size="lg"
-          class="relative rounded-full font-semibold"
-        >
-          <NuxtLink
-            :to="page.hero.headline.to"
-            target="_blank"
-            class="focus:outline-none"
-            tabindex="-1"
-          >
-            <span
-              class="absolute inset-0"
-              aria-hidden="true"
-            />
+        <UBadge v-if="page.hero.headline" variant="subtle" size="lg" class="relative rounded-full font-semibold">
+          <NuxtLink :to="page.hero.headline.to" target="_blank" class="focus:outline-none" tabindex="-1">
+            <span class="absolute inset-0" aria-hidden="true" />
           </NuxtLink>
 
           {{ page.hero.headline.label }}
 
-          <UIcon
-            v-if="page.hero.headline.icon"
-            :name="page.hero.headline.icon"
-            class="ml-1 w-4 h-4 pointer-events-none"
-          />
+          <UIcon v-if="page.hero.headline.icon" :name="page.hero.headline.icon"
+            class="ml-1 w-4 h-4 pointer-events-none" />
         </UBadge>
       </template>
     </ULandingHero>
 
     <ULandingSection class="!pt-0">
-      <img alt="Đóng tiếp BHXH tự nguyện để hưởng lương hưu" src="https://i0.wp.com/store.hotham.vn/wordpress/wp-content/uploads/sites/30/2024/07/Dong-tiep-BHXH-tu-nguyen-de-co-luong-huu.png">
+      <img alt="Đóng tiếp BHXH tự nguyện để hưởng lương hưu"
+        src="https://i0.wp.com/store.hotham.vn/wordpress/wp-content/uploads/sites/30/2024/07/Dong-tiep-BHXH-tu-nguyen-de-co-luong-huu.png">
     </ULandingSection>
 
-    <ULandingSection
+    <!-- <ULandingSection
       v-for="(section, index) in page.sections"
       :key="index"
       :title="section.title"
@@ -97,13 +79,10 @@ useSeoMeta({
           />
         </div>
       </UPageColumns>
-    </ULandingSection>
+    </ULandingSection> -->
 
     <ULandingSection>
-      <ULandingCTA
-        v-bind="page.cta"
-        class="bg-gray-100/50 dark:bg-gray-800/50"
-      />
+      <ULandingCTA v-bind="page.cta" class="bg-gray-100/50 dark:bg-gray-800/50" />
     </ULandingSection>
   </div>
 </template>
@@ -115,6 +94,7 @@ useSeoMeta({
     linear-gradient(to right, rgb(var(--color-gray-200)) 1px, transparent 1px),
     linear-gradient(to bottom, rgb(var(--color-gray-200)) 1px, transparent 1px);
 }
+
 .dark {
   .landing-grid {
     background-image:

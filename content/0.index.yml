@@ -9,8 +9,8 @@ hero:
     to: https://zalo.me/g/rtepcn733
     icon: i-heroicons-arrow-top-right-on-square-20-solid
   links:
-    - label: Đăng ký
-      to: 'tel:0978333963'
+    - label: Đăng ký mức đóng
+      to: '/muc-dong'
       size: xl
       color: black
       icon: i-heroicons-arrow-right-20-solid
@@ -19,7 +19,7 @@ hero:
       icon: i-heroicons-book-open
       size: xl
       color: gray
-      to: /can-biet
+      to: https://blog.hotham.vn/
       target: _blank
 sections:
   - title: The power of our service
@@ -135,10 +135,10 @@ testimonials:
           src: https://i.pravatar.cc/120?img=9
           loading: lazy
 cta:
-  title: Get started today
-  description: Nisi mollit id aliquip sunt est laborum sit sit.
+  title: Hãy cùng trò chuyện
+  description: Quan tâm đến việc đóng tiếp BHXH tự nguyện, gia hạn thẻ BHYT hộ gia đình hoặc chỉ muốn chào hỏi? Hãy gửi cho tôi một tin nhắn!
   links:
-    - label: Mức đóng
+    - label: Liên hệ với tôi
       size: xl
       color: black
-      to: /muc-dong
+      to: tel:0978333963
