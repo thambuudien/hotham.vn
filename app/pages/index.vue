@@ -8,8 +8,10 @@ useSeoMeta({
   titleTemplate: '',
   title: page.value.title,
   ogTitle: page.value.title,
+  twitterTitle: page.value.title,
   description: page.value.description,
-  ogDescription: page.value.description
+  ogDescription: page.value.description,
+  twitterDescription: page.value.description
 })
 </script>
 

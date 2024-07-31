@@ -3,21 +3,22 @@ export default defineNuxtConfig({
   extends: ['@nuxt/ui-pro'],
 
   modules: [
+    '@nuxtjs/seo',
     '@nuxt/content',
     '@nuxt/eslint',
     '@nuxt/fonts',
-    '@nuxtjs/google-fonts',
+    // '@nuxtjs/google-fonts',
     '@nuxt/image',
     '@nuxt/ui',
     '@nuxthq/studio',
     '@vueuse/nuxt',
     'nuxt-og-image'
   ],
-  googleFonts: {
-    families: {
-      'Public Sans': [100, 300, 400, 700, 900]
-    }
-  },
+  // googleFonts: {
+  //   families: {
+  //     'Public Sans': [100, 300, 400, 700, 900]
+  //   }
+  // },
   site: {
     url: 'https://www.hotham.vn',
     name: `Hồ Thị Thắm`,
