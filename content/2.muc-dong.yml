@@ -8,24 +8,17 @@ hero:
 plans:
   - title: Đóng hằng tháng
     description: Đóng trong tháng.
-    price: 264.000đ
+    price: 1
     cycle: /1 tháng
     align: bottom
     button:
       label: Bắt đầu
       color: white
       to: tel:0978333963
-    features:
-      - 1 GB Storage
-      - 1 Email Account
-      - 1 Domain
-      - 1 Website
-      - 1 Database
-      - 1 SSL Certificate
-      - 1 Support Ticket
+
   - title: Đóng 3 tháng
     description: Đóng vào tháng trong kỳ.
-    price: 792.000đ
+    price: 3
     cycle: /3 tháng
     highlight: true
     align: bottom
@@ -33,48 +26,27 @@ plans:
       label: Bắt đầu
       color: black
       to: tel:0978333963
-    features:
-      - 10 GB Storage
-      - 10 Email Accounts
-      - 10 Domains
-      - 10 Websites
-      - 10 Databases
-      - 10 SSL Certificates
-      - 10 Support Tickets
+
   - title: Đóng 6 tháng
     description: A premium plan for large teams.
-    price: 1.584.000đ
+    price: 6
     cycle: /6 tháng
     align: bottom
     button:
       label: Bắt đầu
       color: white
       to: tel:0978333963
-    features:
-      - 100 GB Storage
-      - 100 Email Accounts
-      - 100 Domains
-      - 100 Websites
-      - 100 Databases
-      - 100 SSL Certificates
-      - 100 Support Tickets
+
   - title: Đóng 12 tháng
     description: A premium plan for large teams.
-    price: 3.168.000đ
+    price: 12
     cycle: /12 tháng
     align: bottom
     button:
       label: Bắt đầu
       color: white
       to: tel:0978333963
-    features:
-      - 100 GB Storage
-      - 100 Email Accounts
-      - 100 Domains
-      - 100 Websites
-      - 100 Databases
-      - 100 SSL Certificates
-      - 100 Support Tickets
+
 faq:
   title: Frequently asked questions
   description: Culpa consectetur dolor pariatur commodo aliqua amet tempor nisi enim deserunt elit cillum.
