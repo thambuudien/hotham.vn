@@ -33,14 +33,14 @@ const links = [{
       <UButton
         label="Đăng nhập"
         color="gray"
-        to="/dang-nhap"
+        to="tel:0978333963"
       />
       <UButton
         label="Đăng ký"
         icon="i-heroicons-arrow-right-20-solid"
         trailing
         color="black"
-        to="/dang-ky"
+        to="tel:0978333963"
         class="hidden lg:flex"
       />
     </template> -->

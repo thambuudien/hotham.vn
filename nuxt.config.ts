@@ -12,6 +12,17 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     'nuxt-og-image'
   ],
+  googleFonts: {
+    families: {
+      'Public Sans': [100, 300, 400, 700, 900]
+    }
+  },
+  site: {
+    url: 'https://www.hotham.vn',
+    name: `Hồ Thị Thắm`,
+    description: `Tư vấn đóng tiếp BHXH tự nguyện để hưởng lương hưu khi về già.`,
+    defaultLocale: 'vn'
+  },
 
   hooks: {
     // Define `@nuxt/ui` components as global to use them in `.md` (feel free to add those you need)
