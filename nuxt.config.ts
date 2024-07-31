@@ -45,7 +45,7 @@ export default defineNuxtConfig({
     // Temporary workaround for prerender regression. see https://github.com/nuxt/nuxt/issues/27490
     '/': { prerender: true },
     '/api/search.json': { prerender: true },
-    '/can-biet': { redirect: '/can-biet/bao-hiem-xa-hoi-tu-nguyen', prerender: true }
+    '/tinh-muc-dong-va-luong-huu-du-tinh': { redirect: '/muc-dong', prerender: true }
   },
 
   devtools: {

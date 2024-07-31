@@ -20,13 +20,13 @@ const isNam = ref(false)
 const mucLuongCoSo = ref(2340)
 const mucChuanHoNgheo = ref(1500)
 const mucThuNhapLuaChon = ref(1500)
-const tyLeHoTroNhaNuoc = ref(0.1)
-const tyLeHoTroHaNoi = ref(0.1)
+// const tyLeHoTroNhaNuoc = ref(0.1)
+// const tyLeHoTroHaNoi = ref(0.1)
 
 const phuongThucDongs = computed(() => {
   return page.value.plans.map((t) => {
     const mucDongHangThang = mucThuNhapLuaChon.value * 0.22 * 1000 * t.price
-    const soTienHoTroHangThang = mucChuanHoNgheo.value * tyLeHoTroNhaNuoc.value * 1000 * t.price
+    // const soTienHoTroHangThang = mucChuanHoNgheo.value * tyLeHoTroNhaNuoc.value * 1000 * t.price
     return { ...t, price: mucDongHangThang.toLocaleString(), discount: (mucDongHangThang - 66000 * t.price).toLocaleString(), features: ["Được nhà nước hỗ trợ tiền đóng."] }
   })
 })
