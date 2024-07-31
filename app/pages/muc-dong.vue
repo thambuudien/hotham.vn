@@ -41,7 +41,7 @@ const luongHuuDuTinh = computed(() => {
     <UPageHero v-bind="page.hero">
       <template #description>
         Mức thu nhập lựa chọn: <strong>{{ (mucThuNhapLuaChon * 1000).toLocaleString() }}đ/tháng.</strong>
-        <URange v-model="mucThuNhapLuaChon" :min="mucChuanHoNgheo" :max="mucLuongCoSo * 20" :step="50" />
+        <URange v-model="mucThuNhapLuaChon" :min="mucChuanHoNgheo" :max="mucLuongCoSo * 20" :step="500" />
         Lương hưu dự tính: {{ luongHuuDuTinh.toLocaleString() }}
       </template>
       <template #links>
