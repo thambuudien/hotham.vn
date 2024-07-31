@@ -1,6 +1,19 @@
 <script setup lang="ts">
 const route = useRoute()
+useSeoMeta({
+    title: 'Theo dõi bưu gửi',
+    ogTitle: 'Theo dõi bưu gửi bưu điện',
+    description: 'Chỉ cần nhập mã vận đơn của bưu gửi bạn tra cứu được chính xác thông tin định vị bưu gửi.',
+    ogDescription: 'Khi bạn đến gửi hàng nhớ giữ lại mã vận đơn và nhập vào ô tra cứu để kiểm tra thông tin định vị của bưu gửi và các thông tin phát hàng.'
+})
+
+defineOgImage({
+    component: 'Saas',
+    title: 'Theo dõi bưu gửi bưu điện',
+    description: 'Khi bạn đến gửi hàng nhớ giữ lại mã vận đơn và nhập vào ô tra cứu để kiểm tra thông tin định vị của bưu gửi và các thông tin phát hàng.'
+})
 </script>
+
 <template>
     <UPageHero title="Theo dõi bưu gửi" description="Thông tin định vị vận chuyển và phát hàng." />
     <UContainer>
@@ -18,5 +31,4 @@ const route = useRoute()
             </template>
         </ClientOnly>
     </UContainer>
-
 </template>
