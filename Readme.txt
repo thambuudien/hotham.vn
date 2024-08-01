@@ -1,3 +1,4 @@
+<base href="https://hotham-24073916.hubspotpagebuilder.com" />
 <link rel="apple-touch-icon" sizes="180x180" href="https://www.hotham.vn/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://www.hotham.vn/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="https://www.hotham.vn/favicon-16x16.png">
@@ -7,7 +8,7 @@
 <meta name="theme-color" content="#ffffff">
 
 
-
+rel="canonical"
 
 cms-free-branding-lib
 
