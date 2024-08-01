@@ -15,8 +15,8 @@ useSeoMeta({
 
 defineOgImage({
   component: 'Saas',
-  title: page.value.title,
-  description: page.value.description
+  title: 'Biểu minh họa mức đóng, mức hưởng bảo hiểm xã hội tự nguyện 2024',
+  description: 'Một trong những cách để người lao động tự do được hưởng lương hưu khi về già chính là tham gia bảo hiểm xã hội (BHXH) tự nguyện'
 })
 const isNam = ref(false)
 const mucLuongCoSo = ref(2340)
@@ -29,7 +29,7 @@ const phuongThucDongs = computed(() => {
   return page.value.plans.map((t) => {
     const mucDongHangThang = mucThuNhapLuaChon.value * 0.22 * 1000 * t.price
     // const soTienHoTroHangThang = mucChuanHoNgheo.value * tyLeHoTroNhaNuoc.value * 1000 * t.price
-    return { ...t, price: mucDongHangThang.toLocaleString(), discount: (mucDongHangThang - 66000 * t.price).toLocaleString(), features: ["Được nhà nước hỗ trợ tiền đóng."] }
+    return { ...t, price: mucDongHangThang.toLocaleString(), discount: (mucDongHangThang - 66000 * t.price).toLocaleString(), features: ['Được nhà nước hỗ trợ tiền đóng.'] }
   })
 })
 
@@ -41,10 +41,15 @@ const luongHuuDuTinh = computed(() => {
 <template>
   <div v-if="page">
     <UPageHero v-bind="page.hero">
-      <div class="text-2xl text-center">Lương hưu dự tính : <strong>{{ luongHuuDuTinh.toLocaleString()
-          }}</strong>đ/tháng.</div>
+      <div class="text-2xl text-center">
+        Lương hưu dự tính : <strong>{{ luongHuuDuTinh.toLocaleString()
+        }}</strong>đ/tháng.
+      </div>
       <template #links>
-        <UPricingToggle v-model="isNam" class="w-48">
+        <UPricingToggle
+          v-model="isNam"
+          class="w-48"
+        >
           <template #left>
             Nữ
           </template>
@@ -54,20 +59,41 @@ const luongHuuDuTinh = computed(() => {
         </UPricingToggle>
       </template>
       <template #description>
-        <p class="mb-2">Kéo thanh trượt để thay đổi mức thu nhập lựa chọn cao hơn: <strong>{{ (mucThuNhapLuaChon *
-          1000).toLocaleString() }}đ/tháng.</strong></p>
-        <URange v-model="mucThuNhapLuaChon" :min="mucChuanHoNgheo" :max="mucLuongCoSo * 20" :step="500" />
+        <p class="mb-2">
+          Kéo thanh trượt để thay đổi mức thu nhập lựa chọn cao hơn: <strong>{{ (mucThuNhapLuaChon
+            * 1000).toLocaleString() }}đ/tháng.</strong>
+        </p>
+        <URange
+          v-model="mucThuNhapLuaChon"
+          :min="mucChuanHoNgheo"
+          :max="mucLuongCoSo * 20"
+          :step="500"
+        />
       </template>
-
     </UPageHero>
 
     <UContainer>
-      <UPricingCard v-for="(plan, index) in phuongThucDongs" :key="index" class="mt-5" v-bind="plan" :price="plan.price"
-        :cycle="plan.cycle" orientation="horizontal" />
+      <UPricingCard
+        v-for="(plan, index) in phuongThucDongs"
+        :key="index"
+        class="mt-5"
+        v-bind="plan"
+        :price="plan.price"
+        :cycle="plan.cycle"
+        orientation="horizontal"
+      />
     </UContainer>
 
-    <ULandingSection :title="page.faq.title" :description="page.faq.description">
-      <ULandingFAQ :items="page.faq.items" multiple default-open class="max-w-4xl mx-auto" />
+    <ULandingSection
+      :title="page.faq.title"
+      :description="page.faq.description"
+    >
+      <ULandingFAQ
+        :items="page.faq.items"
+        multiple
+        default-open
+        class="max-w-4xl mx-auto"
+      />
     </ULandingSection>
   </div>
 </template>

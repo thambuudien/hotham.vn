@@ -92,8 +92,14 @@ function onSubmit() {
 
     <template #left>
       <p class="text-gray-500 dark:text-gray-400 text-sm">
-        Copyright © 2021 - {{ new Date().getFullYear() }}. Thiết kế website bới <a href="https://www.longwebstudio.net"
-          target="_blank">Long Web Studio</a>
+        © 2021 - {{ new Date().getFullYear() }} Hồ Thị Thắm tại điểm Bưu điện VHX Tự Lập, Mê Linh, Hà Nội. Thiết kế website bởi <a href="https://www.longwebstudio.net"
+          target="_blank"><UBadge
+        variant="subtle"
+        class="mb-0.5"
+      >Long Web Studio
+      <UIcon name="i-heroicons-arrow-top-right-on-square-20-solid"
+      class="ml-1 w-4 h-4 pointer-events-none" />
+    </UBadge></a>
       </p>
     </template>
 
