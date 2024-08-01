@@ -16,8 +16,8 @@ useSeoMeta({
 
 defineOgImage({
     component: 'Saas',
-    title: 'Biểu minh họa mức đóng, mức hưởng bảo hiểm xã hội tự nguyện 2024',
-    description: 'Một trong những cách để người lao động tự do được hưởng lương hưu khi về già chính là tham gia bảo hiểm xã hội (BHXH) tự nguyện'
+    title: 'Tra cứu thông tin ghi nhận đóng BHXH, BHYT',
+    description: 'Người tham gia có thể kiểm tra thông tin đóng BHXH, BHYT mà không cần đến cơ quan BHXH.'
 })
 </script>
 
@@ -37,9 +37,13 @@ defineOgImage({
                     <UAvatar v-bind="avatar" chip-color="primary" chip-text="" chip-position="top-right" />
                 </template>
                 <template #description>
-                    Bạn hãy dùng mã xác nhận này <b>{{ route.query.ma }}</b> để tra cứu trực tuyến thông tin đóng trên
+                    Bạn hãy sao chép mã xác nhận này <b>{{
+                        route.query.ma }}
+
+                    </b>
+                    để tra cứu trực tuyến thông tin đóng trên
                     Cổng Thông
-                    tin điện tử BHXH Việt Nam <a
+                    tin điện tử BHXH Việt Nam <a target="_blank"
                         href="https://baohiemxahoi.gov.vn/tracuu/pages/tra-cuu-thong-tin-ghi-nhan-dong-bhxh-bhyt.aspx"><u>tại
                             đây</u></a>.
                 </template>
