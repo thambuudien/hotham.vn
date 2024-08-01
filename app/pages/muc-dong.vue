@@ -7,8 +7,10 @@ if (!page.value) {
 useSeoMeta({
   title: page.value.title,
   ogTitle: page.value.title,
+  twitterTitle: page.value.title,
   description: page.value.description,
-  ogDescription: page.value.description
+  ogDescription: page.value.description,
+  twitterDescription: page.value.description
 })
 
 defineOgImage({
@@ -39,7 +41,8 @@ const luongHuuDuTinh = computed(() => {
 <template>
   <div v-if="page">
     <UPageHero v-bind="page.hero">
-      <div class="text-2xl text-center">Lương hưu dự tính : <strong>{{ luongHuuDuTinh.toLocaleString() }}</strong>đ/tháng.</div>
+      <div class="text-2xl text-center">Lương hưu dự tính : <strong>{{ luongHuuDuTinh.toLocaleString()
+          }}</strong>đ/tháng.</div>
       <template #links>
         <UPricingToggle v-model="isNam" class="w-48">
           <template #left>
@@ -51,10 +54,11 @@ const luongHuuDuTinh = computed(() => {
         </UPricingToggle>
       </template>
       <template #description>
-        <p class="mb-2">Kéo thanh trượt để thay đổi mức thu nhập lựa chọn cao hơn: <strong>{{ (mucThuNhapLuaChon * 1000).toLocaleString() }}đ/tháng.</strong></p>
+        <p class="mb-2">Kéo thanh trượt để thay đổi mức thu nhập lựa chọn cao hơn: <strong>{{ (mucThuNhapLuaChon *
+          1000).toLocaleString() }}đ/tháng.</strong></p>
         <URange v-model="mucThuNhapLuaChon" :min="mucChuanHoNgheo" :max="mucLuongCoSo * 20" :step="500" />
       </template>
-      
+
     </UPageHero>
 
     <UContainer>

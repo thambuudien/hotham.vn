@@ -3,8 +3,10 @@ const route = useRoute()
 useSeoMeta({
     title: 'Theo dõi bưu gửi',
     ogTitle: 'Theo dõi bưu gửi bưu điện',
+    twitterTitle: 'Theo dõi bưu gửi bưu điện',
     description: 'Chỉ cần nhập mã vận đơn của bưu gửi bạn tra cứu được chính xác thông tin định vị bưu gửi.',
-    ogDescription: 'Khi bạn đến gửi hàng nhớ giữ lại mã vận đơn và nhập vào ô tra cứu để kiểm tra thông tin định vị của bưu gửi và các thông tin phát hàng.'
+    ogDescription: 'Khi bạn đến gửi hàng nhớ giữ lại mã vận đơn và nhập vào ô tra cứu để kiểm tra thông tin định vị của bưu gửi và các thông tin phát hàng.',
+    twitterDescription: 'Khi bạn đến gửi hàng nhớ giữ lại mã vận đơn và nhập vào ô tra cứu để kiểm tra thông tin định vị của bưu gửi và các thông tin phát hàng.'
 })
 
 defineOgImage({
