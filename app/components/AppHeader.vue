@@ -12,38 +12,18 @@ const links = [{
 <template>
   <UHeader :links="links">
     <template #logo>
-      <img
-        src="/tham-buu-dien.webp"
-        alt="Hồ Thị Thắm"
-        class="shadow-xl rounded-full mr-1"
-      > Hồ Thị Thắm <UBadge
-        label="Bưu điện"
-        variant="subtle"
-        class="mb-0.5"
-      />
+      <img src="/tham-buu-dien.webp" alt="Hồ Thị Thắm" class="shadow-xl rounded-full mr-1"> Hồ Thị Thắm
+      <UBadge label="Bưu điện" variant="subtle" class="mb-0.5" />
     </template>
 
-    <!-- <template #right>
-      <UButton
-        label="Đăng nhập"
-        color="gray"
-        to="tel:0978333963"
-      />
-      <UButton
-        label="Đăng ký"
-        icon="i-heroicons-arrow-right-20-solid"
-        trailing
-        color="black"
-        to="tel:0978333963"
-        class="hidden lg:flex"
-      />
-    </template> -->
+    <template #right>
+      <UButton label="0978 333 963" color="gray" to="tel:0978333963" icon="i-simple-icons-zalo" />
+      <UButton label="Đăng ký" icon="i-heroicons-arrow-right-20-solid" trailing color="black" to="/muc-dong"
+        class="hidden lg:flex" />
+    </template>
 
     <template #panel>
-      <UNavigationTree
-        :links="mapContentNavigation(navigation)"
-        default-open
-      />
+      <UNavigationTree :links="mapContentNavigation(navigation)" default-open />
     </template>
   </UHeader>
 </template>

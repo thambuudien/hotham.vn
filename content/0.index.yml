@@ -138,7 +138,8 @@ cta:
   title: Hãy cùng trò chuyện
   description: Quan tâm đến việc đóng tiếp BHXH tự nguyện, gia hạn thẻ BHYT hộ gia đình hoặc chỉ muốn chào hỏi? Hãy gửi cho tôi một tin nhắn!
   links:
-    - label: Liên hệ với tôi
+    - label: 0978 333 963
       size: xl
       color: black
       to: tel:0978333963
+      icon: i-simple-icons-zalo
