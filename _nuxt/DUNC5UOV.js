@@ -1,0 +1,1 @@
+import s from"./BPGe-vox.js";import{d as o,aZ as m,D as p,b8 as u}from"./B7mQRNGC.js";import"./B4T5y5sH.js";import"./Dnd51l0P.js";const l=o({name:"Markdown",extends:s,setup(t){const{parent:e}=u(),{between:n,default:a}=m(),r=p(()=>typeof t.unwrap=="string"?t.unwrap.split(" "):["*"]);return{fallbackSlot:a,tags:r,between:n,parent:e}}});export{l as default};
