@@ -12,8 +12,12 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@nuxthq/studio',
     '@vueuse/nuxt',
-    'nuxt-og-image'
+    'nuxt-og-image',
+    "nuxt-gtag"
   ],
+  gtag: {
+    id: 'G-QCN6S7BFNG'
+  },
   // googleFonts: {
   //   families: {
   //     'Public Sans': [100, 300, 400, 700, 900]

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { data: page } = await useAsyncData('pricing', () => queryContent('/muc-dong').findOne())
+const { data: page } = await useAsyncData('muc-dong', () => queryContent('/muc-dong').findOne())
 if (!page.value) {
   throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
 }
@@ -39,11 +39,7 @@ const luongHuuDuTinh = computed(() => {
 <template>
   <div v-if="page">
     <UPageHero v-bind="page.hero">
-      <template #description>
-        Mức thu nhập lựa chọn: <strong>{{ (mucThuNhapLuaChon * 1000).toLocaleString() }}đ/tháng.</strong>
-        <URange v-model="mucThuNhapLuaChon" :min="mucChuanHoNgheo" :max="mucLuongCoSo * 20" :step="500" />
-        Lương hưu dự tính: {{ luongHuuDuTinh.toLocaleString() }}
-      </template>
+      <div class="text-2xl text-center">Lương hưu dự tính : <strong>{{ luongHuuDuTinh.toLocaleString() }}</strong>đ/tháng.</div>
       <template #links>
         <UPricingToggle v-model="isNam" class="w-48">
           <template #left>
@@ -54,8 +50,12 @@ const luongHuuDuTinh = computed(() => {
           </template>
         </UPricingToggle>
       </template>
+      <template #description>
+        <p class="mb-2">Kéo thanh trượt để thay đổi mức thu nhập lựa chọn cao hơn: <strong>{{ (mucThuNhapLuaChon * 1000).toLocaleString() }}đ/tháng.</strong></p>
+        <URange v-model="mucThuNhapLuaChon" :min="mucChuanHoNgheo" :max="mucLuongCoSo * 20" :step="500" />
+      </template>
+      
     </UPageHero>
-
 
     <UContainer>
       <UPricingCard v-for="(plan, index) in phuongThucDongs" :key="index" class="mt-5" v-bind="plan" :price="plan.price"
