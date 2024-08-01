@@ -1,1 +1,0 @@
-{"id":"4741130a-205e-4b88-955e-bf36618dcb00","timestamp":1722505036347,"matcher":{"static":{"/":{"prerender":true},"/api/search.json":{"prerender":true},"/tinh-muc-dong-va-luong-huu-du-tinh":{"redirect":"/muc-dong"}},"wildcard":{},"dynamic":{}},"prerendered":["/muc-dong","/tra-cuu-hang-buu-dien"]}
