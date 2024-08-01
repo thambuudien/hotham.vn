@@ -7,22 +7,16 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxt/eslint',
     '@nuxt/fonts',
-    // '@nuxtjs/google-fonts',
     '@nuxt/image',
     '@nuxt/ui',
     '@nuxthq/studio',
     '@vueuse/nuxt',
     'nuxt-og-image',
-    "nuxt-gtag"
+    'nuxt-gtag'
   ],
   gtag: {
     id: 'G-QCN6S7BFNG'
   },
-  // googleFonts: {
-  //   families: {
-  //     'Public Sans': [100, 300, 400, 700, 900]
-  //   }
-  // },
   site: {
     url: 'https://www.hotham.vn',
     name: `Hồ Thị Thắm`,
@@ -51,7 +45,7 @@ export default defineNuxtConfig({
     // Temporary workaround for prerender regression. see https://github.com/nuxt/nuxt/issues/27490
     '/': { prerender: true },
     '/api/search.json': { prerender: true },
-    '/tinh-muc-dong-va-luong-huu-du-tinh': { redirect: '/muc-dong', prerender: true }
+    '/tinh-muc-dong-va-luong-huu-du-tinh': { redirect: '/muc-dong', prerender: false }
   },
 
   devtools: {
