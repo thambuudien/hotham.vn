@@ -84,6 +84,10 @@ const luongHuuDuTinh = computed(() => {
       />
     </UContainer>
 
+    <ULandingSection>
+      <ULandingCTA v-bind="page.cta" class="bg-gray-100/50 dark:bg-gray-800/50" />
+    </ULandingSection>
+
     <ULandingSection
       :title="page.faq.title"
       :description="page.faq.description"

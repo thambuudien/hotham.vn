@@ -17,7 +17,7 @@ const links = [{
     </template>
 
     <template #right>
-      <UButton label="0978 333 963" color="gray" to="tel:0978333963" icon="i-simple-icons-zalo" />
+      <UButton label="0978 333 963" color="gray" to="tel:0978333963" icon="i-simple-icons-zalo" class="hidden lg:flex" />
       <UButton label="Đăng ký" icon="i-heroicons-arrow-right-20-solid" trailing color="black" to="/muc-dong"
         class="hidden lg:flex" />
     </template>
